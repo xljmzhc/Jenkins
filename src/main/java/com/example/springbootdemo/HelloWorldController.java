@@ -10,7 +10,7 @@ public class HelloWorldController {
     public String hello() {
         // 获取环境变量 ENV_NAME，如果不存在则使用默认值 "default"
         String envName = System.getenv().getOrDefault("ENV_NAME", "default");
-        return String.format("<h1>Hello SpringBoot</h1><p>test for the gitlab webhooks<p><p>Version:v1 Env:%s</p>", envName);
+        return String.format("<h1>Hello SpringBoot</h1><p>test for the gitlab webhooks 1<p><p>Version:v1 Env:%s</p>", envName);
     }
     @RequestMapping("/health")
     @ResponseBody
